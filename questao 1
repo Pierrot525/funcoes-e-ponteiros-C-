@@ -1,0 +1,23 @@
+//Faça um programa contendo uma sub-rotina que retorne:
+//1 se o número digitado for positivo ou 0 se for negativo.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+float ret( float A){
+if(A>=0){
+return printf("1");}
+else if(A<=0){
+return printf("0");}
+}
+
+int main(){
+float n1,A;
+
+printf("digite um numero maior ou menor que zero\n");
+scanf("%f",&n1);
+
+A = n1;
+            ret(A);
+
+return 0;  }
