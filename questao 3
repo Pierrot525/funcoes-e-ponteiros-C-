@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int Me(int n1,int n2,int n3){
+        
+   int maior = 0;
+             if(n1>n2 && n1>n3){
+                      maior= n1;}
+
+             else if(n2>n1 && n2>n3){
+                      maior= n2;}
+
+             else if(n3>n1 && n3>n2){
+                      maior= n3;}
+
+           return printf("%d",maior); }
+
+int main(){
+int a,b,c;
+
+          printf("digite 3 numeros\n");
+               scanf("%d",&a);
+                scanf("%d",&b);
+                 scanf("%d",&c);
+
+          printf("o maior numero entre eles e:\n");
+
+               Me(a,b,c);
+
+return 0; }
