@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float media(float n1,float n2,float n3,char N){
+   
+   float me=0;
+               if(N=='a' || N=='A'){
+                                  me= (n1+n2+n3)/3; }
+
+               else if(N=='p' || N=='P'){
+                                  me= ((n1*5)+(n2*3)+(n3*2))/10;}
+
+                return printf("sua media e %f",me); }
+
+int main(){
+float a,b,c;
+char N;
+
+         printf("digite suas 3 ultimas notas:\n");
+           scanf("%f",&a); scanf("%f",&b); scanf("%f",&c);
+
+         printf("digite A para media aritimetica,ou P para ponderada\n");
+           scanf("%s",&N);
+
+            media(a,b,c,N); 
+
+ return 0; }
+
