@@ -1,0 +1,61 @@
+#include <stdio.h>
+
+#define tamA 5
+#define tamB 10
+
+void preencher_vetores(int vetor_A[], int vetor_B[]) {
+                      
+                        printf("Digite 5 valores para o vetor A:\n");
+
+                          for (int i = 0; i < tamA; i++) {
+                                printf("Valor %d: ", i + 1);
+                                  scanf("%d", &vetor_A[i]); }
+
+                        printf("Digite 10 valores para o vetor B:\n");
+
+                          for (int i = 0; i < tamB; i++) {
+                          
+                                printf("Valor %d: ", i + 1);
+                                  scanf("%d", &vetor_B[i]); }
+                                                     }
+
+void mostrar_vetores(int vetor_A[], int vetor_B[]) {
+
+                      printf("\nVetor A:\n");
+                  
+                        for (int i = 0; i < tamA; i++) {
+                              printf("vetor %d: %d\n", i, vetor_A[i]); }
+
+                      printf("\nVetor B:\n");
+
+                        for (int i = 0; i < tamB; i++) {
+                              printf("vetor2%d: %d\n", i, vetor_B[i]); }
+                                                                         }
+
+void calcular_soma(int vetor_A[], int vetor_B[]) {
+
+    int soma_A = 0, soma_B = 0;
+
+                       for (int i = 0; i < tamA; i++) {
+                               soma_A += vetor_A[i]; }
+
+                       for (int i = 0; i < tamB; i++) {
+                               soma_B += vetor_B[i]; }
+
+    int soma_total = soma_A + soma_B;
+
+         printf("Soma dos elementos do vetor A: %d\n", soma_A);
+         printf("Soma dos elementos do vetor B: %d\n", soma_B);
+         printf("Soma total de todos os elementos: %d\n", soma_total); }
+
+int main() {
+int vetor_A[tamA];
+int vetor_B[tamB];
+           
+         preencher_vetores(vetor_A, vetor_B);
+
+         mostrar_vetores(vetor_A, vetor_B);
+
+         calcular_soma(vetor_A, vetor_B);
+
+return 0; }
